@@ -371,6 +371,9 @@ input[type="date"]{
 .form_cadastro .campo:nth-child(10) button{
     margin: 2em auto;
 }
+header .fa-bars{
+    display: none;
+}
 /* Início Responsividade */
 /* 800*/
 
@@ -420,4 +423,37 @@ input[type="date"]{
         margin-top: 0.5em;
     }
 } /*Fim Media query 800px*/
-x
+
+/*Mobile*/
+@media(max-width:460px){
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 3em;
+        display: block;
+    }
+    header .conteiner div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header .conteiner div a{
+        margin-left: 7em;
+    }
+    #menu{
+        position: absolute;
+        top: 5.5em;
+        width: 100%;
+        left: 0;
+        background-color: var(--purple);
+        display: none;
+    }
+    #menu ul{
+        flex-direction: column ;
+        height: 350px;
+        margin-left: 1em;
+    }
+    #menu a{
+        display: block;
+        padding: 0.5 0;
+    }
+}
