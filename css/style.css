@@ -114,13 +114,15 @@ header img{
     justify-content: space-between;
     align-items: center;
     padding: 30 0px;
+    width: 100%;
+
 }
 .ligas img{
     height: 143px;
     
 }
 .ligas h4{
-    font-size: 30px;
+    font-size: 45px;
     text-transform: uppercase;
 }
 .ligas h3{
@@ -130,6 +132,11 @@ header img{
 }
 .ligas div{
     margin-bottom: 35px;
+}
+.ligas_imagens{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 .sobre_fundo{
     background-image: url(../images/Teams/T6.jpg);
@@ -412,7 +419,7 @@ header .fa-bars{
         width: 50%;
         margin-right: 30px;
     }
-    .conten{
+    .content{
         margin-top: 30px;
     }
     .card img{
@@ -434,10 +441,10 @@ header .fa-bars{
     header .conteiner div{
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items:center;
     }
     header .conteiner div a{
-        margin-left: 7em;
+        margin-left: 4em;
     }
     #menu{
         position: absolute;
@@ -456,4 +463,75 @@ header .fa-bars{
         display: block;
         padding: 0.5 0;
     }
+    .partidas .conteiner{
+        width: 97%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .em_andamento{
+        width: 37%;
+        align-self: flex-start;
+        margin-left: 1em;
+    }
+    .proximas_partidas{
+        width: 90%;
+    }
+    .partida img{
+        width: 30px;
+        padding: 0 10px ;
+    }
+    .banner{
+        height: 250px;
+    }
+    .banner img{
+        max-width: 100px;
+    }
+    .ligas{
+        flex-direction: column;
+    }
+    .ligas div:nth-child(1){
+        display: flex;
+    }
+    .ligas h4, .ligas h3{
+        font-size: 2em;
+        line-height: 20px;
+        margin-right: 0.5em;
+        margin-top: 25px;
+    }
+    .sobre img{
+        display: none;
+    }
+    .texto_sobre{
+        width: 90%;
+    }
+    .content{
+        flex-direction: column;
+        width: 95%;
+    }
+    .content section{
+        width: 100%;
+        margin: auto;
+    }
+    .content article{
+        width: 95%;
+    }
+    .card{
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    .card img{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .card div{
+        padding:1em;
+    }
+    footer .conteiner{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1em;
+    }
+
+
 }
